@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#"
+     xml:base="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-67="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#optional_requires_dense_features -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#optional_requires_dense_features">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_dense_featurizer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_dense_featurizer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_dense_featurizer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_featurizer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DenseFeaturizer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_entity_extractor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_entity_extractor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_featurizer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_featurizer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Featurizer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_intent_classifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_intent_classifier">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_language_model -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_language_model">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_response_selector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_response_selector">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Selector"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_sparse_featurizer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_sparse_featurizer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_featurizer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SparseFeaturizer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_tokenizer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires_tokenizer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#requires"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Tokenizer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DenseFeaturizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DenseFeaturizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Featurizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Featurizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Featurizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Selector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Selector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SparseFeaturizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SparseFeaturizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Featurizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Tokenizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Tokenizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#CRFEntityExtractor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#CRFEntityExtractor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor"/>
+        <optional_requires_dense_features rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ConveRTFeaturizer"/>
+        <optional_requires_dense_features rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModelFeaturizer"/>
+        <optional_requires_dense_features rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieFeaturizer"/>
+        <optional_requires_dense_features rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyFeaturizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#JiebaTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#WhitespaceTokenizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ConveRTFeaturizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ConveRTFeaturizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DenseFeaturizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#CountVectorsFeaturizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#CountVectorsFeaturizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SparseFeaturizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#JiebaTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#WhitespaceTokenizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DIETClassifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DIETClassifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ConveRTFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#CountVectorsFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModelFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LexicalSyntacticFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#RegexFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyFeaturizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DucklingEntityExtractor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DucklingEntityExtractor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntitySynonymMapper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntitySynonymMapper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor"/>
+        <requires_entity_extractor rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#CRFEntityExtractor"/>
+        <requires_entity_extractor rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DIETClassifier"/>
+        <requires_entity_extractor rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DucklingEntityExtractor"/>
+        <requires_entity_extractor rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieEntityExtractor"/>
+        <requires_entity_extractor rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#RegexEntityExtractor"/>
+        <requires_entity_extractor rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyEntityExtractor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#FallbackClassifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#FallbackClassifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier"/>
+        <requires_intent_classifier rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#KeywordIntentClassifier"/>
+        <requires_intent_classifier rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LogisticRegressionClassifier"/>
+        <requires_intent_classifier rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieIntentClassifier"/>
+        <requires_intent_classifier rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SklearnIntentClassifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#JiebaTokenizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#JiebaTokenizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Tokenizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#KeywordIntentClassifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#KeywordIntentClassifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ConveRTFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#CountVectorsFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModelFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LexicalSyntacticFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#RegexFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyFeaturizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModelFeaturizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModelFeaturizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DenseFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieFeaturizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#JiebaTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#WhitespaceTokenizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LexicalSyntacticFeaturizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LexicalSyntacticFeaturizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SparseFeaturizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#JiebaTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#WhitespaceTokenizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LogisticRegressionClassifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LogisticRegressionClassifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ConveRTFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModelFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LexicalSyntacticFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#RegexFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyFeaturizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieEntityExtractor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieEntityExtractor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor"/>
+        <requires_language_model rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieNLP"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#JiebaTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#WhitespaceTokenizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieFeaturizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieFeaturizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DenseFeaturizer"/>
+        <requires_language_model rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieNLP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieIntentClassifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieIntentClassifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier"/>
+        <requires_language_model rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieNLP"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#JiebaTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#WhitespaceTokenizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieNLP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieNLP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieTokenizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieTokenizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Tokenizer"/>
+        <requires_language_model rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieNLP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#RegexEntityExtractor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#RegexEntityExtractor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#RegexFeaturizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#RegexFeaturizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SparseFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#CountVectorsFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieFeaturizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#JiebaTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyTokenizer"/>
+        <requires_tokenizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#WhitespaceTokenizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ResponseSelector -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ResponseSelector">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Selector"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ConveRTFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#CountVectorsFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModelFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LexicalSyntacticFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#RegexFeaturizer"/>
+        <requires_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyFeaturizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SklearnIntentClassifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SklearnIntentClassifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier"/>
+        <requires_dense_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#ConveRTFeaturizer"/>
+        <requires_dense_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModelFeaturizer"/>
+        <requires_dense_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#MitieFeaturizer"/>
+        <requires_dense_featurizer rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyFeaturizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyEntityExtractor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyEntityExtractor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor"/>
+        <requires_language_model rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyNLP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyFeaturizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyFeaturizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#DenseFeaturizer"/>
+        <requires_language_model rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyNLP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyNLP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyNLP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyTokenizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyTokenizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Tokenizer"/>
+        <requires_language_model rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#SpacyNLP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#WhitespaceTokenizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#WhitespaceTokenizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Tokenizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#EntityExtractor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#IntentClassifier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#LanguageModel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Selector"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Tokenizer"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
