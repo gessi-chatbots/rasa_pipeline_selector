@@ -119,6 +119,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#enabled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#enabled">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlacampas/ontologies/2022/6/untitled-ontology-67#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
