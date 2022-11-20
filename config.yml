@@ -1,0 +1,14 @@
+
+recipe: default.v1
+
+language: en
+pipeline:
+- name: RegexEntityExtractor
+- name: SpacyFeaturizer
+- name: CountVectorsFeaturizer
+- name: LogisticRegressionClassifier
+- name: MitieNLP
+- name: ResponseSelector
+- name: SpacyTokenizer
+
+policies:
